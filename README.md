@@ -19,7 +19,6 @@ It showcases premium indoor plants with a clean UI and smooth user experience.
 
 * HTML
 * CSS
-* JavaScript
 
 ---
 
