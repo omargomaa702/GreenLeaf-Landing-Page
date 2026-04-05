@@ -25,9 +25,7 @@ It showcases premium indoor plants with a clean UI and smooth user experience.
 
 ## 🌐 Live Demo
 
-https://omargomaa702.github.io/fresh-market-landing-page/
-
-
+https://omargomaa702.github.io/GreenLeaf-Landing-Page/
 ---
 
 ## 📂 Project Structure
@@ -40,7 +38,6 @@ project/
 │── images/
 ```
 
----
 
 ## 🎯 Purpose
 
