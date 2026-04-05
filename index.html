@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover beautiful, hand-picked plants for your home. Free shipping, care kits included, and 30-day guarantee.">
+    <title>GreenLeaf - Premium Indoor & Outdoor Plants</title>
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="Style/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-icon">🌿</span>
+                    <span class="logo-text">GreenLeaf</span>
+                </div>
+
+                <nav class="nav-menu">
+                    <a href="#home">Home</a>
+                    <a href="#products">Products</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+
+                <div class="header-actions">
+                    <button class="search-btn" aria-label="Search">🔍</button>
+                    <button class="cart-btn" aria-label="Shopping cart">🛒 <span class="cart-count">0</span></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Bring Nature Into Your Home</h1>
+                <p class="hero-subtitle">Discover our collection of hand-picked, premium plants perfect for any space</p>
+                <button class="cta-button primary">Shop Now</button>
+                <button class="cta-button secondary">Learn More</button>
+            </div>
+            <div class="hero-image">
+                <div class="placeholder-image"><img src="img/hero.jpg" alt="Featured Plant" /></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="about">
+        <div class="container">
+            <h2 class="section-title">Why Choose GreenLeaf?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🚚</div>
+                    <h3>Free Shipping</h3>
+                    <p>On all orders over $50. Fast and secure delivery to your doorstep.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📚</div>
+                    <h3>Care Kits Included</h3>
+                    <p>Every plant comes with a comprehensive care guide and starter kit.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✅</div>
+                    <h3>30-Day Guarantee</h3>
+                    <p>Not satisfied? Return within 30 days for a full refund or replacement.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌱</div>
+                    <h3>100% Organic</h3>
+                    <p>All plants are grown organically without harmful pesticides.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <h2 class="section-title">Featured Plant</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image"><img src="img/image2.jpg" alt="Monstera Deliciosa"></div>
+                    <div class="product-info">
+                        <h3 class="product-name">Monstera Deliciosa</h3>
+                        <p class="product-description">Stunning split-leaf plant, easy to care for and perfect for modern interiors.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$45.99</span>
+                            <button class="add-to-cart-btn" onclick="addToCart('Monstera Deliciosa', 45.99)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image"><img src="img/image 6.png" alt="Snake Plant"></div>
+                    <div class="product-info">
+                        <h3 class="product-name">Snake Plant</h3>
+                        <p class="product-description">Low maintenance air purifier plant. Perfect for offices and bedrooms.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$32.99</span>
+                            <button class="add-to-cart-btn" onclick="addToCart('Snake Plant', 32.99)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image"><img src="img/path.png" alt="Pothos Plant"></div>
+                    <div class="product-info">
+                        <h3 class="product-name">Pothos Plant</h3>
+                        <p class="product-description">Trailing vines with heart-shaped leaves. Great for hanging baskets.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$28.99</span>
+                            <button class="add-to-cart-btn" onclick="addToCart('Pothos Plant', 28.99)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image"><img src="img/snack.jpg" alt="Fiddle Leaf Fig"></div>
+                    <div class="product-info">
+                        <h3 class="product-name">Fiddle Leaf Fig</h3>
+                        <p class="product-description">Bold statement plant with large, beautiful leaves for any room.</p>
+                        <div class="product-footer">
+                            <span class="product-price">$55.99</span>
+                            <button class="add-to-cart-btn" onclick="addToCart('Fiddle Leaf Fig', 55.99)">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Get Plant Care Tips & Exclusive Offers</h2>
+                <p>Subscribe to our newsletter for weekly care tips, exclusive discounts, and new plant arrivals.</p>
+                <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="cta-button primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>About GreenLeaf</h4>
+                    <p>We're passionate about bringing nature into homes and improving indoor air quality through beautiful, healthy plants.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#products">Shop</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Care Guides</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#" class="social-icon">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#" class="social-icon">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+
+                        <a href="#" class="social-icon">
+                            <i class="fa-brands fa-pinterest"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 GreenLeaf. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
